@@ -25,5 +25,9 @@ dev_dependencies:
   json_serializable: ^6.7.1
 
 flutter:
-
+  assets:
+    - assets/plants.json
+    - assets/images/
+    - assets/images/garden.png
+    - assets/images/connect_garden.png
   uses-material-design: true
