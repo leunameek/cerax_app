@@ -1,4 +1,5 @@
 import 'range_info.dart';
+import 'sensor_data.dart';
 
 class Plant {
   final String plant;
@@ -26,5 +27,13 @@ class Plant {
       light: RangeInfo.fromJson(json['light']),
       temperature: RangeInfo.fromJson(json['temperature']),
     );
+  }
+
+  Map<String, String> evaluateSensorData(SensorData data) {
+    return {
+      'moisture': moisture.evaluate(data.moisture.toDouble()),
+      'light': light.evaluate(data.light.toDouble()),
+      'temperature': temperature.evaluate(data.temperature),
+    };
   }
 }

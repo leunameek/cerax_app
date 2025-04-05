@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cerax_app_v1/presentation/pages/connect_garden_page.dart';
+import 'package:cerax_app_v1/presentation/pages/plant_list_page.dart';
 
 class InteractiveWelcomePage extends StatelessWidget {
   const InteractiveWelcomePage({super.key});
@@ -62,9 +62,7 @@ class InteractiveWelcomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (_) => const ConnectGardenPage(),
-                    ),
+                    MaterialPageRoute(builder: (_) => const PlantListPage()),
                   );
                 },
                 child: const Text(

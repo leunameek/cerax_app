@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cerax_app_v1/presentation/pages/plant_list_page.dart';
 import 'package:cerax_app_v1/presentation/pages/interactive_welcome_page.dart';
 
 void main() {

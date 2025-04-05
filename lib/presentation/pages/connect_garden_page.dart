@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cerax_app_v1/core/services/ble/ble_service.dart';
+import 'package:cerax_app_v1/presentation/pages/plant_analyzer_page.dart';
+import 'package:cerax_app_v1/core/models/plant.dart';
 
 class ConnectGardenPage extends StatefulWidget {
-  const ConnectGardenPage({super.key});
+  final Plant plant;
+
+  const ConnectGardenPage({super.key, required this.plant});
 
   @override
   State<ConnectGardenPage> createState() => _ConnectGardenPageState();
@@ -21,7 +25,16 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
     try {
       final bleService = BLEService();
       await bleService.connectToDevice();
-      // TODO: Navigate to sensor live view / plant analyzer
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder:
+              (_) => PlantAnalyzerPage(
+                plant: widget.plant,
+                bleService: bleService,
+              ),
+        ),
+      );
     } catch (e) {
       setState(() => error = e.toString());
     } finally {
