@@ -1,546 +1,546 @@
-[
-  {
-    "plant": "Violeta de los Alpes",
-    "scientific_name": "Cyclamen persicum",
-    "image": "assets/images/violeta_de_los_alpes.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+  [
+    {
+      "plant": "Violeta de los Alpes",
+      "scientific_name": "Cyclamen persicum",
+      "image": "assets/images/violeta_de_los_alpes.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 10.0,
+        "max": 20.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
       }
     },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
+    {
+      "plant": "Begonia Siempreviva",
+      "scientific_name": "Begonia semperflorens",
+      "image": "assets/images/begonia_siempreviva.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
       }
     },
-    "temperature": {
-      "min": 10.0,
-      "max": 20.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
+    {
+      "plant": "Pensamiento",
+      "scientific_name": "Viola tricolor",
+      "image": "assets/images/pensamiento.jpg",
+      "moisture": {
+        "min": 40.0,
+        "max": 60.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 5.0,
+        "max": 18.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Hortensia",
+      "scientific_name": "Hydrangea macrophylla",
+      "image": "assets/images/hortensia.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Centavito",
+      "scientific_name": "Dichondra repens",
+      "image": "assets/images/centavito.jpg",
+      "moisture": {
+        "min": 40.0,
+        "max": 60.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 20.0,
+        "max": 40.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Jacarandá",
+      "scientific_name": "Jacaranda mimosifolia",
+      "image": "assets/images/jacarandá.jpg",
+      "moisture": {
+        "min": 30.0,
+        "max": 50.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 70.0,
+        "max": 100.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Filodendro",
+      "scientific_name": "Philodendron spp.",
+      "image": "assets/images/filodendro.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 70.0,
+        "max": 100.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Margarita de pantano",
+      "scientific_name": "Senecio carbonelli",
+      "image": "assets/images/margarita_de_pantano.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 70.0,
+        "max": 100.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Orquídea",
+      "scientific_name": "Odontoglossum luteopurpureum",
+      "image": "assets/images/orquídea.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Helecho",
+      "scientific_name": "Azolla filiculoides",
+      "image": "assets/images/helecho.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 70.0,
+        "max": 100.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Manzanito de páramo",
+      "scientific_name": "Clethra fimbriata",
+      "image": "assets/images/manzanito_de_páramo.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 70.0,
+        "max": 100.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Violeta africana",
+      "scientific_name": "Saintpaulia ionantha",
+      "image": "assets/images/violeta_africana.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Espatifilo",
+      "scientific_name": "Spathiphyllum spp.",
+      "image": "assets/images/espatifilo.jpg",
+      "moisture": {
+        "min": 60.0,
+        "max": 80.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Cinta",
+      "scientific_name": "Chlorophytum comosum",
+      "image": "assets/images/cinta.jpg",
+      "moisture": {
+        "min": 40.0,
+        "max": 60.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Poto",
+      "scientific_name": "Epipremnum aureum",
+      "image": "assets/images/poto.jpg",
+      "moisture": {
+        "min": 40.0,
+        "max": 60.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Lengua de Suegra",
+      "scientific_name": "Sansevieria trifasciata",
+      "image": "assets/images/sansevieria.jpg",
+      "moisture": {
+        "min": 30.0,
+        "max": 50.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
+      }
+    },
+    {
+      "plant": "Drácena",
+      "scientific_name": "Dracaena spp.",
+      "image": "assets/images/drácena.jpg",
+      "moisture": {
+        "min": 40.0,
+        "max": 60.0,
+        "advice": {
+          "low": "La humedad del suelo es muy baja, riega la planta.",
+          "ok": "La humedad está en el rango óptimo.",
+          "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
+        }
+      },
+      "light": {
+        "min": 40.0,
+        "max": 70.0,
+        "advice": {
+          "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
+          "ok": "El nivel de luz es ideal.",
+          "high": "Demasiada luz, puede causar quemaduras en las hojas."
+        }
+      },
+      "temperature": {
+        "min": 12.0,
+        "max": 24.0,
+        "advice": {
+          "low": "Hace demasiado frío, puede afectar el crecimiento.",
+          "ok": "La temperatura está dentro del rango óptimo.",
+          "high": "Hace demasiado calor, puede causar estrés hídrico."
+        }
       }
     }
-  },
-  {
-    "plant": "Begonia Siempreviva",
-    "scientific_name": "Begonia semperflorens",
-    "image": "assets/images/begonia_siempreviva.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Pensamiento",
-    "scientific_name": "Viola tricolor",
-    "image": "assets/images/pensamiento.jpg",
-    "moisture": {
-      "min": 40.0,
-      "max": 60.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 5.0,
-      "max": 18.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Hortensia",
-    "scientific_name": "Hydrangea macrophylla",
-    "image": "assets/images/hortensia.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Centavito",
-    "scientific_name": "Dichondra repens",
-    "image": "assets/images/centavito.jpg",
-    "moisture": {
-      "min": 40.0,
-      "max": 60.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 20.0,
-      "max": 40.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Jacarandá",
-    "scientific_name": "Jacaranda mimosifolia",
-    "image": "assets/images/jacarandá.jpg",
-    "moisture": {
-      "min": 30.0,
-      "max": 50.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 70.0,
-      "max": 100.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Filodendro",
-    "scientific_name": "Philodendron spp.",
-    "image": "assets/images/filodendro.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 70.0,
-      "max": 100.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Margarita de pantano",
-    "scientific_name": "Senecio carbonelli",
-    "image": "assets/images/margarita_de_pantano.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 70.0,
-      "max": 100.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Orquídea",
-    "scientific_name": "Odontoglossum luteopurpureum",
-    "image": "assets/images/orquídea.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Helecho",
-    "scientific_name": "Azolla filiculoides",
-    "image": "assets/images/helecho.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 70.0,
-      "max": 100.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Manzanito de páramo",
-    "scientific_name": "Clethra fimbriata",
-    "image": "assets/images/manzanito_de_páramo.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 70.0,
-      "max": 100.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Violeta africana",
-    "scientific_name": "Saintpaulia ionantha",
-    "image": "assets/images/violeta_africana.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Espatifilo",
-    "scientific_name": "Spathiphyllum spp.",
-    "image": "assets/images/espatifilo.jpg",
-    "moisture": {
-      "min": 60.0,
-      "max": 80.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Cinta",
-    "scientific_name": "Chlorophytum comosum",
-    "image": "assets/images/cinta.jpg",
-    "moisture": {
-      "min": 40.0,
-      "max": 60.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Poto",
-    "scientific_name": "Epipremnum aureum",
-    "image": "assets/images/poto.jpg",
-    "moisture": {
-      "min": 40.0,
-      "max": 60.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Lengua de Suegra",
-    "scientific_name": "Sansevieria trifasciata",
-    "image": "assets/images/sansevieria.jpg",
-    "moisture": {
-      "min": 30.0,
-      "max": 50.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  },
-  {
-    "plant": "Drácena",
-    "scientific_name": "Dracaena spp.",
-    "image": "assets/images/drácena.jpg",
-    "moisture": {
-      "min": 40.0,
-      "max": 60.0,
-      "advice": {
-        "low": "La humedad del suelo es muy baja, riega la planta.",
-        "ok": "La humedad está en el rango óptimo.",
-        "high": "Demasiada humedad, existe riesgo de pudrición de raíces."
-      }
-    },
-    "light": {
-      "min": 40.0,
-      "max": 70.0,
-      "advice": {
-        "low": "Luz insuficiente, mueve la planta a un lugar más iluminado.",
-        "ok": "El nivel de luz es ideal.",
-        "high": "Demasiada luz, puede causar quemaduras en las hojas."
-      }
-    },
-    "temperature": {
-      "min": 12.0,
-      "max": 24.0,
-      "advice": {
-        "low": "Hace demasiado frío, puede afectar el crecimiento.",
-        "ok": "La temperatura está dentro del rango óptimo.",
-        "high": "Hace demasiado calor, puede causar estrés hídrico."
-      }
-    }
-  }
-]
+  ]

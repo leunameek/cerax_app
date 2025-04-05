@@ -48,10 +48,7 @@ class _PlantListPageState extends State<PlantListPage> {
                 ),
                 title: Text(plant.plant),
                 subtitle: Text(plant.scientificName),
-                onTap: () {
-                  // TODO: Navigate to plant detail or BLE scan page
-                  // Navigator.push(context, MaterialPageRoute(builder: (_) => PlantDetailPage(plant)));
-                },
+                onTap: () {},
               );
             },
           );

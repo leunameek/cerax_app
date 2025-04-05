@@ -1,0 +1,546 @@
+[
+  {
+    "plant": "Violeta de los Alpes",
+    "scientific_name": "Cyclamen persicum",
+    "image": "assets/images/violeta_de_los_alpes.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "La Violeta de los Alpes necesita suelos húmedos pero bien drenados. Riégala evitando mojar las hojas y ajusta la frecuencia según la estación.",
+        "ok": "Humedad perfecta para promover una floración saludable y hojas vigorosas.",
+        "high": "Riesgo de pudrición en raíces y tubérculos por exceso de agua. Disminuye el riego y verifica el drenaje."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Ubica la planta cerca de una ventana con luz filtrada. Evita rincones oscuros que detendrán la floración.",
+        "ok": "Excelente, la luz actual favorecerá una floración prolongada.",
+        "high": "Demasiada luz directa puede quemar hojas y flores. Filtra la luz con una cortina."
+      }
+    },
+    "temperature": {
+      "min": 10.0,
+      "max": 20.0,
+      "advice": {
+        "low": "Temperaturas bajas pueden dañar flores y hojas. Trasládala a un ambiente más cálido.",
+        "ok": "Condiciones ideales para mantener su floración.",
+        "high": "Temperaturas superiores a 20°C pueden causar caída de flores. Procura ventilar o refrescar el ambiente."
+      }
+    }
+  },
+  {
+    "plant": "Begonia Siempreviva",
+    "scientific_name": "Begonia semperflorens",
+    "image": "assets/images/begonia_siempreviva.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "La begonia necesita un suelo ligeramente húmedo. Riega de forma moderada sin mojar hojas ni flores.",
+        "ok": "La humedad es la correcta para un desarrollo óptimo y una floración constante.",
+        "high": "Exceso de agua puede causar pudrición. Disminuye el riego y mejora el drenaje si es necesario."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Poca luz generará hojas débiles y menos flores. Busca un lugar iluminado sin sol directo.",
+        "ok": "Buena luz para mantener floración y follaje vigoroso.",
+        "high": "Luz directa intensa puede quemar hojas. Proporciónale sombra parcial o luz filtrada."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperatura muy baja. Puede provocar daños en hojas y flores. Reubícala en un sitio cálido.",
+        "ok": "Temperatura adecuada para floración y desarrollo saludable.",
+        "high": "Temperaturas altas pueden causar marchitez. Refresca el entorno o proporciona sombra."
+      }
+    }
+  },
+  {
+    "plant": "Pensamiento",
+    "scientific_name": "Viola tricolor",
+    "image": "assets/images/pensamiento.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "El suelo debe estar ligeramente húmedo. Riégalo sin encharcar y mantén el sustrato aireado.",
+        "ok": "Humedad correcta para mantener flores grandes y coloridas.",
+        "high": "Exceso de humedad puede provocar hongos. Reduce el riego y mejora la ventilación."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "La falta de luz puede provocar flores pequeñas y escasas. Reubica a un sitio con mejor iluminación.",
+        "ok": "Recibe la luz ideal para su floración.",
+        "high": "Sol directo en exceso puede marchitar las flores. Usa sombra parcial en horas de mayor intensidad."
+      }
+    },
+    "temperature": {
+      "min": 5.0,
+      "max": 18.0,
+      "advice": {
+        "low": "Tolera frío leve, pero por debajo de 5°C puede dañarse. Protéjela de las heladas.",
+        "ok": "Temperatura ideal para su ciclo normal.",
+        "high": "El calor excesivo acorta su vida y reduce flores. Manténla fresca y en sombra parcial."
+      }
+    }
+  },
+  {
+    "plant": "Hortensia",
+    "scientific_name": "Hydrangea macrophylla",
+    "image": "assets/images/hortensia.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "La hortensia necesita suelo siempre húmedo. Aumenta la frecuencia de riego, especialmente en floración.",
+        "ok": "Humedad ideal para mantener flores grandes y saludables.",
+        "high": "El exceso de agua favorece la pudrición. Deja secar un poco la tierra antes del siguiente riego."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Sin luz suficiente las hortensias no florecen bien. Busca un lugar con buena luz indirecta.",
+        "ok": "Excelente, recibe la luz adecuada para floración.",
+        "high": "Luz directa puede quemar flores y hojas. Usa sombra parcial durante las horas de más sol."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Las bajas temperaturas detienen su crecimiento y floración. Protéjela si baja de 10°C.",
+        "ok": "Clima ideal para que prospere.",
+        "high": "Calor excesivo acelera la caída de flores. Proporciónale sombra y riega con mayor frecuencia."
+      }
+    }
+  },
+  {
+    "plant": "Centavito",
+    "scientific_name": "Dichondra repens",
+    "image": "assets/images/centavito.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "Este tapizante requiere humedad moderada. Aumenta riego especialmente en épocas secas.",
+        "ok": "Humedad correcta para su desarrollo y cobertura uniforme.",
+        "high": "Exceso de agua puede provocar hongos y pudrición. Reduce el riego y asegúrate de un buen drenaje."
+      }
+    },
+    "light": {
+      "min": 20.0,
+      "max": 40.0,
+      "advice": {
+        "low": "Necesita algo más de luz para evitar que pierda densidad. Busca un sitio con semisombra.",
+        "ok": "Buena cantidad de luz para mantener un follaje compacto y verde.",
+        "high": "Demasiada luz directa amarillea las hojas. Prefiere sombra parcial."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "El Centavito detiene su crecimiento con frío. Manténlo alejado de heladas.",
+        "ok": "Temperatura óptima para un crecimiento vigoroso.",
+        "high": "Altas temperaturas y exposición prolongada pueden secarlo. Asegura sombra y riego adecuado."
+      }
+    }
+  },
+  {
+    "plant": "Jacarandá",
+    "scientific_name": "Jacaranda mimosifolia",
+    "image": "assets/images/jacarandá.jpg",
+    "moisture": {
+      "min": 30.0,
+      "max": 50.0,
+      "advice": {
+        "low": "El Jacarandá necesita algo más de humedad. Riega sin encharcar para estimular su crecimiento.",
+        "ok": "Humedad adecuada para que mantenga un follaje sano y ramas fuertes.",
+        "high": "Si el suelo permanece saturado, hay riesgo de pudrición. Permite que la tierra drene bien."
+      }
+    },
+    "light": {
+      "min": 70.0,
+      "max": 100.0,
+      "advice": {
+        "low": "Requiere pleno sol para desarrollarse adecuadamente. Reubica a un espacio soleado.",
+        "ok": "Exposición solar perfecta para floración y formación de copa.",
+        "high": "Esta especie tolera bien la luz intensa, pero si notas hojas secas, verifica riego y humedad."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Con frío intenso puede perder hojas. Si es posible, protégelo durante las heladas.",
+        "ok": "Temperatura perfecta para su desarrollo.",
+        "high": "Temperaturas elevadas pueden secar las hojas si no tiene suficiente agua. Ajusta riego."
+      }
+    }
+  },
+  {
+    "plant": "Filodendro",
+    "scientific_name": "Philodendron spp.",
+    "image": "assets/images/filodendro.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Filodendro necesita suelos húmedos pero no encharcados. Aumenta el riego sin saturar.",
+        "ok": "Humedad ideal para mantener hojas verdes y brillantes.",
+        "high": "Demasiada agua provoca hojas amarillas y pudrición. Disminuye la frecuencia de riego."
+      }
+    },
+    "light": {
+      "min": 70.0,
+      "max": 100.0,
+      "advice": {
+        "low": "Requiere más luz indirecta intensa. Si es posible, acércalo a una ventana luminosa.",
+        "ok": "Nivel de luz adecuado para mantener su vigor.",
+        "high": "Si recibe sol directo puede quemarse. Prefiere luz intensa pero filtrada."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperaturas bajas afectan su metabolismo. Colócalo en un ambiente más cálido.",
+        "ok": "Temperatura ideal para su crecimiento vigoroso.",
+        "high": "Temperaturas altas y secas provocan bordes quemados. Aumenta la humedad ambiental."
+      }
+    }
+  },
+  {
+    "plant": "Margarita de pantano",
+    "scientific_name": "Senecio carbonelli",
+    "image": "assets/images/margarita_de_pantano.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Este Senecio requiere humedad constante. Riega de forma frecuente para mantener el sustrato fresco.",
+        "ok": "Humedad perfecta para una floración continua.",
+        "high": "Demasiada agua puede asfixiar las raíces. Deja secar ligeramente antes de regar de nuevo."
+      }
+    },
+    "light": {
+      "min": 70.0,
+      "max": 100.0,
+      "advice": {
+        "low": "Le falta luz para florecer adecuadamente. Busca un lugar con pleno sol o mucha luz.",
+        "ok": "Luz suficiente para hojas sanas y floración óptima.",
+        "high": "Tolera bien la luz intensa, pero si notas hojas secas, ajusta el riego."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperatura baja limita la floración. Procura protegerla de fríos intensos.",
+        "ok": "Clima ideal para su crecimiento y floración.",
+        "high": "Con temperaturas muy altas puede necesitar más riego. Ajusta según el clima."
+      }
+    }
+  },
+  {
+    "plant": "Orquídea",
+    "scientific_name": "Odontoglossum luteopurpureum",
+    "image": "assets/images/orquídea.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "La orquídea necesita un ambiente húmedo. Incrementa la humedad y usa riegos por aspersión.",
+        "ok": "Humedad ideal para mantener hojas y raíces saludables.",
+        "high": "El exceso de agua es muy perjudicial. Disminuye el riego y ventila correctamente."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Luz insuficiente limita la floración. Busca un sitio con luz brillante pero filtrada.",
+        "ok": "Nivel correcto de luz para florecer.",
+        "high": "Luz directa puede provocar quemaduras en hojas. Usa sombra parcial o cortina translúcida."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Con frío intenso las orquídeas detienen su crecimiento. Evita temperaturas bajo 10°C.",
+        "ok": "Temperatura perfecta para su desarrollo y floración.",
+        "high": "Temperaturas altas provocan caída prematura de flores. Aumenta la humedad ambiental."
+      }
+    }
+  },
+  {
+    "plant": "Helecho",
+    "scientific_name": "Azolla filiculoides",
+    "image": "assets/images/helecho.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "El helecho necesita humedad constante. Aumenta el riego y rocía las hojas si es necesario.",
+        "ok": "Humedad perfecta para frondas verdes y sanas.",
+        "high": "El exceso de agua estanca puede provocar hongos. Ventila bien y reduce riego si es necesario."
+      }
+    },
+    "light": {
+      "min": 70.0,
+      "max": 100.0,
+      "advice": {
+        "low": "Sin luz suficiente las frondas pierden color. Busca un lugar con buena iluminación indirecta.",
+        "ok": "Luz perfecta para mantener su follaje denso y verde.",
+        "high": "Demasiada luz directa seca las frondas. Prefiere sombra parcial o luz filtrada."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperaturas bajas ralentizan su crecimiento. Manténlo en interiores durante el frío.",
+        "ok": "Temperatura óptima para helechos saludables.",
+        "high": "Exceso de calor puede secar las frondas. Aumenta la humedad ambiental y evita sol directo."
+      }
+    }
+  },
+  {
+    "plant": "Manzanito de páramo",
+    "scientific_name": "Clethra fimbriata",
+    "image": "assets/images/manzanito_de_páramo.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "El Manzanito de páramo necesita suelos húmedos pero sin encharcamiento. Aumenta el riego moderadamente.",
+        "ok": "Humedad adecuada para mantener su resistencia y crecimiento.",
+        "high": "El exceso de humedad puede afectar las raíces. Ajusta el riego y mejora el drenaje."
+      }
+    },
+    "light": {
+      "min": 70.0,
+      "max": 100.0,
+      "advice": {
+        "low": "Esta planta de páramo requiere buena iluminación. Colócala en un sitio más soleado.",
+        "ok": "Recibe la luz adecuada para mantenerse saludable.",
+        "high": "Tolera bien el sol, pero en exceso podría deshidratarse. Ajusta el riego si es necesario."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "El frío extremo puede dañar sus hojas. Protéjela si hay riesgo de heladas.",
+        "ok": "Temperatura óptima para su desarrollo natural.",
+        "high": "Exceso de calor puede estresar a la planta. Mantén buena hidratación."
+      }
+    }
+  },
+  {
+    "plant": "Violeta africana",
+    "scientific_name": "Saintpaulia ionantha",
+    "image": "assets/images/violeta_africana.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "La Violeta africana requiere suelos húmedos y bien aireados. Aumenta el riego evitando mojar las hojas.",
+        "ok": "Humedad perfecta para mantener hojas y flores sanas.",
+        "high": "Demasiada humedad genera hongos. Reduce el riego y mejora la ventilación."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Poca luz reduce la floración. Busca una ventana luminosa pero sin sol directo.",
+        "ok": "Luz adecuada para mantener su floración continua.",
+        "high": "Exceso de luz directa puede quemar las hojas. Usa cortinas o coloca en semisombra."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperatura baja reduce su crecimiento. Manténla en interiores durante climas fríos.",
+        "ok": "Temperatura ideal para hojas verdes y floración constante.",
+        "high": "El exceso de calor marchita sus flores. Aumenta la humedad ambiental."
+      }
+    }
+  },
+  {
+    "plant": "Espatifilo",
+    "scientific_name": "Spathiphyllum spp.",
+    "image": "assets/images/espatifilo.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "El Espatifilo necesita humedad constante. Incrementa la frecuencia de riego.",
+        "ok": "Perfecto, la humedad es la correcta para hojas y flores saludables.",
+        "high": "Riego excesivo produce amarillamiento y pudrición. Reduce el riego y asegúrate de que drene bien."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Sin luz suficiente las hojas perderán su color verde intenso. Colócalo en un lugar con mejor iluminación.",
+        "ok": "Buena cantidad de luz para mantener flores y hojas sanas.",
+        "high": "Demasiada luz directa provoca quemaduras. Prefiere luz indirecta o semisombra."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "El frío ralentiza su crecimiento y floración. Evita temperaturas menores a 12°C.",
+        "ok": "Temperatura ideal para su desarrollo vigoroso.",
+        "high": "Calor excesivo puede causar marchitez. Aumenta la humedad y proporciona sombra."
+      }
+    }
+  },
+  {
+    "plant": "Cinta",
+    "scientific_name": "Chlorophytum comosum",
+    "image": "assets/images/cinta.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "La Cinta requiere riegos regulares. Aumenta la humedad especialmente en climas cálidos.",
+        "ok": "Humedad ideal para mantener hojas verdes y sin puntas secas.",
+        "high": "Demasiado riego puede provocar raíces blandas. Deja secar parcialmente antes de regar de nuevo."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "La falta de luz debilita sus hojas y reduce su color. Busca un lugar con luz brillante indirecta.",
+        "ok": "Recibe la luz adecuada para un desarrollo sano.",
+        "high": "Demasiada luz directa puede secar las puntas de las hojas. Prefiere semisombra."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Con frío intenso, las hojas pueden tornarse marrones. Evita corrientes de aire frío.",
+        "ok": "Temperatura perfecta para su crecimiento.",
+        "high": "Temperaturas altas requieren más humedad. Rocía las hojas ocasionalmente."
+      }
+    }
+  },
+  {
+    "plant": "Poto",
+    "scientific_name": "Epipremnum aureum",
+    "image": "assets/images/poto.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "El Poto requiere riego moderado. Si las hojas se caen, aumenta el riego gradualmente.",
+        "ok": "Humedad adecuada para hojas verdes y crecimiento activo.",
+        "high": "El exceso de riego provoca pudrición. Deja secar parcialmente el sustrato antes de volver a regar."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Poca luz produce hojas pálidas y crecimiento lento. Busca un lugar con luz media a brillante.",
+        "ok": "Perfecta cantidad de luz para su desarrollo.",
+        "high": "Demasiada luz directa blanquea las hojas. Prefiere luz filtrada o sombra parcial."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Temperaturas menores a 12°C ralentizan su crecimiento. Colócalo en interiores.",
+        "ok": "Temperatura ideal para un desarrollo vigoroso.",
+        "high": "El calor excesivo puede provocar hojas amarillas. Mantén la humedad ambiental alta."
+      }
+    }
+  },
+  {
+    "plant": "Lengua de Suegra",
+    "scientific_name": "Sansevieria trifasciata",
+    "image": "assets/images/sansevieria.jpg",
+    "moisture": {
+      "min": 30.0,
+      "max": 50.0,
+      "advice": {
+        "low": "La Sansevieria es resistente a la sequía, pero si las hojas se arrugan, riega un poco más.",
+        "ok": "Humedad ideal, suculenta y sana.",
+        "high": "Demasiada agua es letal para esta planta. Deja secar completamente antes de volver a regar."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Tolera poca luz pero crecerá mejor con luz brillante indirecta.",
+        "ok": "Excelente cantidad de luz para mantener hojas firmes y sanas.",
+        "high": "Demasiada luz directa puede causar manchas amarillas. Prefiere luz tamizada."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Con temperaturas muy bajas las hojas se dañan fácilmente. No expongas a menos de 10°C.",
+        "ok": "Temperatura ideal para su óptimo crecimiento.",
+        "high": "En calor extremo, aumenta la ventilación y evita exposición directa prolongada."
+      }
+    }
+  },
+  {
+    "plant": "Drácena",
+    "scientific_name": "Dracaena spp.",
+    "image": "assets/images/drácena.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "La Drácena necesita un riego moderado. Si las hojas se curvan hacia abajo, riega más frecuentemente.",
+        "ok": "Humedad adecuada para mantener su follaje vistoso.",
+        "high": "Riego excesivo causa pudrición. Disminuye la frecuencia y verifica que el sustrato drene bien."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Con poca luz, las hojas pierden color y brillo. Mejora la iluminación sin sol directo.",
+        "ok": "Cantidad justa de luz para un desarrollo equilibrado.",
+        "high": "Exposición directa prolongada puede quemar las hojas. Prefiere luz brillante indirecta."
+      }
+    },
+    "temperature": {
+      "min": 12.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Frío excesivo genera manchas en las hojas. Evita temperaturas bajo 12°C.",
+        "ok": "Temperatura ideal para mantenerla sana.",
+        "high": "Con calor extremo, aumenta la humedad ambiental para evitar puntas secas."
+      }
+    }
+  }
+]

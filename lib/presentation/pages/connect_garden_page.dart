@@ -21,7 +21,6 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
     try {
       final bleService = BLEService();
       await bleService.connectToDevice();
-      // TODO: Navigate to sensor live view / plant analyzer
     } catch (e) {
       setState(() => error = e.toString());
     } finally {

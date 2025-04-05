@@ -21,7 +21,7 @@ class InteractiveWelcomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset(
-            'assets/images/garden.png', // Replace with your actual image
+            'assets/images/garden.png',
             height: 320,
             fit: BoxFit.cover,
           ),

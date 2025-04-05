@@ -13,7 +13,6 @@ class BLEService {
   BluetoothCharacteristic? _characteristic;
 
   Future<void> connectToDevice() async {
-    // Scan for devices
     await FlutterBluePlus.startScan(timeout: const Duration(seconds: 5));
 
     final subscription = FlutterBluePlus.scanResults.listen((results) async {
