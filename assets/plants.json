@@ -512,8 +512,8 @@
     }
   },
   {
-    "plant": "Drácena",
-    "scientific_name": "Dracaena spp.",
+    "plant": "Drácaena",
+    "scientific_name": "Dracaena.",
     "image": "assets/images/drácena.jpg",
     "moisture": {
       "min": 40.0,
@@ -540,6 +540,262 @@
         "low": "Frío excesivo genera manchas en las hojas. Evita temperaturas bajo 12°C.",
         "ok": "Temperatura ideal para mantenerla sana.",
         "high": "Con calor extremo, aumenta la humedad ambiental para evitar puntas secas."
+      }
+    }
+  },
+  {
+    "plant": "Palmera de salón",
+    "scientific_name": "Chamaedorea elegans",
+    "image": "assets/images/palmera_de_salon.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "La Palmera de salón prefiere una humedad moderada. Rocia sus hojas o usa un humidificador si el ambiente es seco.",
+        "ok": "Humedad óptima para mantener un follaje saludable.",
+        "high": "El exceso de humedad puede pudrir las raíces. Asegura un buen drenaje del sustrato."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Tolera poca luz, pero crecerá mejor con luz indirecta media.",
+        "ok": "Luz indirecta brillante es ideal para su crecimiento.",
+        "high": "La luz solar directa puede quemar sus hojas. Usa sombra parcial."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 24.0,
+      "advice": {
+        "low": "Evita temperaturas menores a 18°C para que mantenga su crecimiento.",
+        "ok": "Temperatura ideal para desarrollo óptimo.",
+        "high": "Puede tolerar hasta 27°C si tiene buena ventilación."
+      }
+    }
+  },
+  {
+    "plant": "Anturio",
+    "scientific_name": "Anthurium spp.",
+    "image": "assets/images/anturio.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Requiere alta humedad. Usa humidificador o bandeja con agua y piedras.",
+        "ok": "Humedad adecuada para floración saludable.",
+        "high": "Demasiada humedad puede generar hongos. Asegura ventilación."
+      }
+    },
+    "light": {
+      "min": 50.0,
+      "max": 70.0,
+      "advice": {
+        "low": "La floración se reduce con poca luz. Usa luz indirecta brillante.",
+        "ok": "Luz indirecta brillante es perfecta para el anturio.",
+        "high": "Evita el sol directo que puede quemar sus hojas."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 27.0,
+      "advice": {
+        "low": "Evita temperaturas menores a 15°C. Puede detener su crecimiento.",
+        "ok": "Temperatura ideal para un anturio sano.",
+        "high": "Temperaturas mayores a 30°C pueden estresarla. Aumenta la humedad ambiental."
+      }
+    }
+  },
+  {
+    "plant": "Singonio",
+    "scientific_name": "Syngonium podophyllum",
+    "image": "assets/images/singonio.jpg",
+    "moisture": {
+      "min": 50.0,
+      "max": 75.0,
+      "advice": {
+        "low": "Prefiere humedad moderada. Aumenta la frecuencia de riego si el ambiente es seco.",
+        "ok": "Humedad perfecta para su desarrollo.",
+        "high": "Evita el encharcamiento para prevenir pudrición de raíces."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Crece con poca luz, pero la luz media mejora su color y crecimiento.",
+        "ok": "Luz brillante e indirecta es ideal.",
+        "high": "Evita sol directo. Puede dañar sus hojas."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 27.0,
+      "advice": {
+        "low": "Frío bajo los 15°C ralentiza su crecimiento.",
+        "ok": "Temperatura adecuada para un Singonio saludable.",
+        "high": "Temperaturas altas requieren más riego y humedad ambiental."
+      }
+    }
+  },
+  {
+    "plant": "Bromelia",
+    "scientific_name": "Guzmania wittmackii",
+    "image": "assets/images/bromelia.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Requiere alta humedad. Rocía agua o usa humidificador.",
+        "ok": "Humedad perfecta para crecimiento y floración.",
+        "high": "Evita exceso de agua estancada. Puede provocar hongos."
+      }
+    },
+    "light": {
+      "min": 50.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Poca luz afecta la floración. Necesita luz indirecta brillante.",
+        "ok": "Luz indirecta o filtrada la mantiene saludable.",
+        "high": "Sol directo puede dañar el follaje. Usa sombra parcial."
+      }
+    },
+    "temperature": {
+      "min": 21.0,
+      "max": 29.0,
+      "advice": {
+        "low": "Prefiere temperaturas cálidas. Protege del frío bajo 18°C.",
+        "ok": "Clima perfecto para su desarrollo.",
+        "high": "Tolerante al calor si se mantiene buena humedad."
+      }
+    }
+  },
+  {
+    "plant": "Dieffenbachia",
+    "scientific_name": "Dieffenbachia spp.",
+    "image": "assets/images/dieffenbachia.jpg",
+    "moisture": {
+      "min": 50.0,
+      "max": 70.0,
+      "advice": {
+        "low": "Si las hojas se marchitan, aumenta la frecuencia de riego. Prefiere un sustrato ligeramente húmedo.",
+        "ok": "Humedad perfecta para mantener hojas grandes y sanas.",
+        "high": "Evita el exceso de agua. Puede causar pudrición de tallos y raíces."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "La poca luz reduce el colorido de las hojas. Requiere luz media o filtrada.",
+        "ok": "Luz indirecta brillante resalta su follaje.",
+        "high": "Evita el sol directo. Puede quemar el borde de las hojas."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 26.0,
+      "advice": {
+        "low": "El frío puede dañar las hojas. Mantenla lejos de corrientes de aire frío.",
+        "ok": "Temperatura ideal para una Dieffenbachia saludable.",
+        "high": "Temperaturas muy altas pueden causar hojas caídas. Aumenta la humedad."
+      }
+    }
+  },
+  {
+    "plant": "Aglaonema",
+    "scientific_name": "Aglaonema spp.",
+    "image": "assets/images/aglaonema.jpg",
+    "moisture": {
+      "min": 50.0,
+      "max": 70.0,
+      "advice": {
+        "low": "La Aglaonema necesita humedad media. Si notas hojas secas, riega un poco más.",
+        "ok": "Buena humedad para crecimiento vigoroso.",
+        "high": "Demasiada agua puede pudrir las raíces. Asegura buen drenaje."
+      }
+    },
+    "light": {
+      "min": 30.0,
+      "max": 60.0,
+      "advice": {
+        "low": "Tolera sombra, pero con algo de luz sus colores se intensifican.",
+        "ok": "Luz indirecta es perfecta para sus hojas variegadas.",
+        "high": "Evita exposición directa al sol. Puede causar quemaduras."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 26.0,
+      "advice": {
+        "low": "Temperaturas menores a 15°C afectan su metabolismo.",
+        "ok": "Ambiente cálido favorece su crecimiento.",
+        "high": "Asegura buena humedad si el clima es muy caluroso."
+      }
+    }
+  },
+  {
+    "plant": "Lirio de la paz",
+    "scientific_name": "Spathiphyllum spp.",
+    "image": "assets/images/lirio_de_la_paz.jpg",
+    "moisture": {
+      "min": 60.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Riega con más frecuencia. Esta planta necesita humedad constante.",
+        "ok": "Perfecto, condiciones ideales para sus flores blancas.",
+        "high": "Demasiada agua puede amarillear las hojas. Verifica el drenaje."
+      }
+    },
+    "light": {
+      "min": 40.0,
+      "max": 70.0,
+      "advice": {
+        "low": "En baja luz dejará de florecer. Requiere luz media para mantenerse activa.",
+        "ok": "Luz filtrada o sombra luminosa es ideal.",
+        "high": "Evita el sol directo. Sus hojas pueden quemarse fácilmente."
+      }
+    },
+    "temperature": {
+      "min": 18.0,
+      "max": 27.0,
+      "advice": {
+        "low": "Evita temperaturas por debajo de 15°C.",
+        "ok": "Condiciones óptimas para floración prolongada.",
+        "high": "Aumenta la humedad ambiental si el ambiente es muy caluroso."
+      }
+    }
+  },
+  {
+    "plant": "Cactus de Navidad",
+    "scientific_name": "Schlumbergera spp.",
+    "image": "assets/images/cactus_de_navidad.jpg",
+    "moisture": {
+      "min": 40.0,
+      "max": 60.0,
+      "advice": {
+        "low": "Aunque es un cactus, necesita más humedad que los cactus comunes. Riega cuando el sustrato esté casi seco.",
+        "ok": "Perfecto para floración en temporada.",
+        "high": "Evita que el sustrato se mantenga húmedo por mucho tiempo. Puede pudrir sus raíces."
+      }
+    },
+    "light": {
+      "min": 50.0,
+      "max": 80.0,
+      "advice": {
+        "low": "Requiere buena luz para florecer, aunque no sol directo.",
+        "ok": "Luz brillante indirecta es perfecta.",
+        "high": "Sol directo prolongado puede quemar sus segmentos. Prefiere sombra parcial."
+      }
+    },
+    "temperature": {
+      "min": 15.0,
+      "max": 24.0,
+      "advice": {
+        "low": "El frío excesivo afecta la floración. Mantenlo en interior si baja de 12°C.",
+        "ok": "Clima ideal para floración durante el invierno.",
+        "high": "Puede soportar algo más de calor si tiene buena humedad y sombra."
       }
     }
   }
