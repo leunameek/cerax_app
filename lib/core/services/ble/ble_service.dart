@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:cerax_app_v1/core/models/sensor_data.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class BLEService {
   static const String deviceName = "PlantMonitor";
@@ -12,8 +13,21 @@ class BLEService {
   BluetoothDevice? _connectedDevice;
   BluetoothCharacteristic? _characteristic;
 
+  Future<void> requestBLEPermissions() async {
+    if (await Permission.bluetoothScan.isDenied) {
+      await Permission.bluetoothScan.request();
+    }
+    if (await Permission.bluetoothConnect.isDenied) {
+      await Permission.bluetoothConnect.request();
+    }
+    if (await Permission.location.isDenied) {
+      await Permission.location.request();
+    }
+  }
+
   Future<void> connectToDevice() async {
-    // Scan for devices
+    await requestBLEPermissions();
+
     await FlutterBluePlus.startScan(timeout: const Duration(seconds: 5));
 
     final subscription = FlutterBluePlus.scanResults.listen((results) async {

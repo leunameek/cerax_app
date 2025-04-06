@@ -4,7 +4,7 @@ import 'package:cerax_app_v1/core/models/plant.dart';
 import 'package:cerax_app_v1/presentation/pages/connect_garden_page.dart';
 
 class PlantListPage extends StatefulWidget {
-  const PlantListPage({Key? key}) : super(key: key);
+  const PlantListPage({super.key});
 
   @override
   State<PlantListPage> createState() => _PlantListPageState();
@@ -52,9 +52,10 @@ class _PlantListPageState extends State<PlantListPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        centerTitle: true,
         title: const Text(
           "Selecciona tu planta",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
       ),

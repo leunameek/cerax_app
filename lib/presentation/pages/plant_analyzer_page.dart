@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cerax_app_v1/core/models/plant.dart';
 import 'package:cerax_app_v1/core/models/sensor_data.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:cerax_app_v1/core/models/plant_record.dart';
 import 'package:cerax_app_v1/core/services/ble/ble_service.dart';
 import 'package:cerax_app_v1/core/utils/sensor_averager.dart';
 
@@ -42,6 +44,15 @@ class _PlantAnalyzerPageState extends State<PlantAnalyzerPage> {
       evaluation = result;
       loading = false;
     });
+
+    final record = PlantRecord(
+      timestamp: DateTime.now(),
+      data: data,
+      plantName: widget.plant.plant,
+    );
+
+    final box = Hive.box<PlantRecord>('plant_history');
+    await box.add(record);
   }
 
   @override
@@ -75,7 +86,7 @@ class _PlantAnalyzerPageState extends State<PlantAnalyzerPage> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      "🌡️ Temperatura: ${avgData!.temperature}°C\n💧 Humedad: ${avgData!.moisture}%\n🔆 Luz: ${avgData!.light} lux",
+                      "🌡️ Temperatura: ${avgData!.temperature}°C\n💧 Humedad: ${avgData!.moisture}%\n🔆 Luz: ${avgData!.light}%",
                       style: const TextStyle(
                         color: Colors.white70,
                         fontSize: 16,

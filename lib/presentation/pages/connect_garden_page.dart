@@ -12,9 +12,68 @@ class ConnectGardenPage extends StatefulWidget {
   State<ConnectGardenPage> createState() => _ConnectGardenPageState();
 }
 
-class _ConnectGardenPageState extends State<ConnectGardenPage> {
+class _ConnectGardenPageState extends State<ConnectGardenPage>
+    with TickerProviderStateMixin {
   bool isConnecting = false;
   String? error;
+
+  Future<bool> _showRetryDialog() async {
+    return await showDialog<bool>(
+          context: context,
+          builder: (context) {
+            final shakeController = AnimationController(
+              vsync: Navigator.of(context),
+              duration: const Duration(milliseconds: 400),
+            );
+            final shakeAnimation = Tween<Offset>(
+                  begin: Offset.zero,
+                  end: const Offset(0.025, 0),
+                )
+                .chain(CurveTween(curve: Curves.elasticIn))
+                .animate(shakeController);
+
+            shakeController.forward().then((_) => shakeController.reverse());
+
+            return SlideTransition(
+              position: shakeAnimation,
+              child: AlertDialog(
+                backgroundColor: const Color(0xFF222222),
+                title: const Text(
+                  'No se pudo conectar',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                content: const Text(
+                  'Confirma que Cerax esté encendido y cerca del dispositivo 📡',
+                  style: TextStyle(color: Colors.white70),
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: const Text(
+                      'Cancelar',
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: const Text(
+                      'Reintentar',
+                      style: TextStyle(
+                        color: Color(0xff607afb),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ) ??
+        false;
+  }
 
   Future<void> _connectToDevice() async {
     setState(() {
@@ -25,6 +84,7 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
     try {
       final bleService = BLEService();
       await bleService.connectToDevice();
+      if (!mounted) return;
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -36,9 +96,17 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
         ),
       );
     } catch (e) {
-      setState(() => error = e.toString());
-    } finally {
-      setState(() => isConnecting = false);
+      if (!mounted) return;
+
+      final retry = await _showRetryDialog();
+
+      setState(() {
+        isConnecting = false;
+      });
+
+      if (retry) {
+        _connectToDevice(); // 💥 Retry logic
+      }
     }
   }
 
@@ -49,10 +117,11 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        centerTitle: true,
         leading: BackButton(color: Colors.white),
         title: const Text(
           'Conecta tu jardín',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(
@@ -86,21 +155,13 @@ class _ConnectGardenPageState extends State<ConnectGardenPage> {
               ],
             ),
           ),
-          if (error != null)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
-              child: Text(
-                error!,
-                style: const TextStyle(color: Colors.redAccent),
-              ),
-            ),
           Center(
             child: SizedBox(
               width: 220,
               height: 48,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent,
+                  backgroundColor: const Color(0xff607afb),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),

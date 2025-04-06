@@ -11,7 +11,7 @@ class InteractiveWelcomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: BackButton(color: Colors.white),
+        centerTitle: true,
         title: const Text(
           'Jardín interactivo',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -54,7 +54,7 @@ class InteractiveWelcomePage extends StatelessWidget {
               height: 48,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent,
+                  backgroundColor: const Color(0xff607afb),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
