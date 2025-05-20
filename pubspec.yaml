@@ -1,0 +1,39 @@
+name: cerax_app_v1
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.27.2
+  json_annotation: ^4.9.0
+
+  cupertino_icons: ^1.0.8
+  permission_handler: ^11.4.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.15
+  fl_chart: ^0.64.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+flutter:
+  assets:
+    - assets/plants.json
+    - assets/images/
+    - assets/images/garden.png
+    - assets/images/connect_garden.png
+  uses-material-design: true
