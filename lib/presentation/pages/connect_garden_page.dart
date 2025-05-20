@@ -17,6 +17,7 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
   bool isConnecting = false;
   String? error;
 
+<<<<<<< HEAD
   late final AnimationController _controller;
   late final Animation<double> _animation;
 
@@ -42,6 +43,9 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
 
   Future<bool> _showRetryDialog() async {
     // Mantengo tu código original del diálogo de retry sin cambios
+=======
+  Future<bool> _showRetryDialog() async {
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
     return await showDialog<bool>(
           context: context,
           builder: (context) {
@@ -70,7 +74,11 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
                   ),
                 ),
                 content: const Text(
+<<<<<<< HEAD
                   'Confirma que Cerax esté encendido y cerca del dispositivo ',
+=======
+                  'Confirma que Cerax esté encendido y cerca del dispositivo 📡',
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
                   style: TextStyle(color: Colors.white70),
                 ),
                 actions: [
@@ -112,10 +120,18 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
       Navigator.push(
         context,
         MaterialPageRoute(
+<<<<<<< HEAD
           builder: (_) => PlantAnalyzerPage(
             plant: widget.plant,
             bleService: bleService,
           ),
+=======
+          builder:
+              (_) => PlantAnalyzerPage(
+                plant: widget.plant,
+                bleService: bleService,
+              ),
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
         ),
       );
     } catch (e) {
@@ -128,13 +144,18 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
       });
 
       if (retry) {
+<<<<<<< HEAD
         _connectToDevice();
+=======
+        _connectToDevice(); // 💥 Retry logic
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
       }
     }
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final darkTheme = ThemeData.dark();
 
     return Theme(
@@ -203,6 +224,66 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
                   ),
                   label: isConnecting
                       ? const SizedBox(
+=======
+    return Scaffold(
+      backgroundColor: const Color(0xFF111111),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        leading: BackButton(color: Colors.white),
+        title: const Text(
+          'Conecta tu jardín',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Image.asset(
+            'assets/images/connect_garden.png',
+            height: 320,
+            fit: BoxFit.cover,
+          ),
+          const SizedBox(height: 24),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Conecta tu jardín',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 12),
+                Text(
+                  'Empieza conectando tu jardinerito a la aplicación. Una vez que lo hagas, podrás monitorear y controlar las condiciones de tu jardín.',
+                  style: TextStyle(fontSize: 16, color: Colors.white70),
+                ),
+                SizedBox(height: 32),
+              ],
+            ),
+          ),
+          Center(
+            child: SizedBox(
+              width: 220,
+              height: 48,
+              child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xff607afb),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                icon: const Icon(Icons.bluetooth, color: Colors.white),
+                label:
+                    isConnecting
+                        ? const SizedBox(
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
                           width: 16,
                           height: 16,
                           child: CircularProgressIndicator(
@@ -210,6 +291,7 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
                             strokeWidth: 2,
                           ),
                         )
+<<<<<<< HEAD
                       : const Text(
                           'Conectar Jardinerito',
                           style: TextStyle(
@@ -223,6 +305,20 @@ class _ConnectGardenPageState extends State<ConnectGardenPage>
             ),
           ],
         ),
+=======
+                        : const Text(
+                          'Conectar Jardinerito',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                onPressed: isConnecting ? null : _connectToDevice,
+              ),
+            ),
+          ),
+        ],
+>>>>>>> f0b092e414be4d459546ac653a1d76483cea15a8
       ),
     );
   }
