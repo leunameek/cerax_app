@@ -32,7 +32,7 @@ class InteractiveWelcomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  'Bienvenido a tu jardín interactivo',
+                  'Bienvenido a the fucking best app para mantener tus plantitas lindas',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
