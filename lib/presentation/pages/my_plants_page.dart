@@ -14,7 +14,7 @@ class MyPlantsPage extends StatelessWidget {
     final Map<String, List<PlantRecord>> groupedByPlant = {};
 
     for (var record in records) {
-      groupedByPlant.putIfAbsent(record.plantName, () => []).add(record);
+      groupedByPlant.putIfAbsent(record.nickname, () => []).add(record);
     }
 
     return Scaffold(
@@ -57,8 +57,7 @@ class MyPlantsPage extends StatelessWidget {
                             color: Colors.white54,
                           ),
                           onTap: () {
-                            Navigator.push(
-                              context,
+                            Navigator.of(context).push(
                               MaterialPageRoute(
                                 builder:
                                     (_) => PlantHistoryPage(

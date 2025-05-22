@@ -1,7 +1,7 @@
+import 'package:cerax_app_v1/presentation/pages/nickname_plant_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cerax_app_v1/core/utils/plant_loader.dart';
 import 'package:cerax_app_v1/core/models/plant.dart';
-import 'package:cerax_app_v1/presentation/pages/connect_garden_page.dart';
 
 class PlantListPage extends StatefulWidget {
   const PlantListPage({super.key});
@@ -102,10 +102,9 @@ class _PlantListPageState extends State<PlantListPage> {
                         final plant = _filteredPlants[index];
                         return GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
+                            Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (_) => ConnectGardenPage(plant: plant),
+                                builder: (_) => NicknamePlantPage(plant: plant),
                               ),
                             );
                           },

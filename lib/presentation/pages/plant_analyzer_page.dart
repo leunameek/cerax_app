@@ -8,11 +8,13 @@ import 'package:cerax_app_v1/core/utils/sensor_averager.dart';
 
 class PlantAnalyzerPage extends StatefulWidget {
   final Plant plant;
-  final BLEService bleService;
+  final String nickname; // I added this here but its giving me an error
+  final BLEService? bleService;
 
   const PlantAnalyzerPage({
     super.key,
     required this.plant,
+    required this.nickname,
     required this.bleService,
   });
 
@@ -21,38 +23,64 @@ class PlantAnalyzerPage extends StatefulWidget {
 }
 
 class _PlantAnalyzerPageState extends State<PlantAnalyzerPage> {
-  bool loading = true;
+  bool loading = false;
+  bool measuring = false;
   SensorData? avgData;
   Map<String, String>? evaluation;
 
-  @override
-  void initState() {
-    super.initState();
-    analyzePlant();
-  }
-
   Future<void> analyzePlant() async {
-    final averager = SensorAverager();
-    final data = await averager.collectAndAverage(
-      widget.bleService.sensorDataStream(),
-    );
-
-    final result = widget.plant.evaluateSensorData(data);
+    if (widget.bleService == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Conexión BLE no disponible. Conéctate para medir.'),
+          backgroundColor: Colors.orangeAccent,
+        ),
+      );
+      return;
+    }
 
     setState(() {
-      avgData = data;
-      evaluation = result;
-      loading = false;
+      loading = true;
+      avgData = null;
+      evaluation = null;
     });
 
-    final record = PlantRecord(
-      timestamp: DateTime.now(),
-      data: data,
-      plantName: widget.plant.plant,
-    );
+    try {
+      final averager = SensorAverager();
+      final data = await averager.collectAndAverage(
+        widget.bleService!.sensorDataStream(),
+      );
 
-    final box = Hive.box<PlantRecord>('plant_history');
-    await box.add(record);
+      final result = widget.plant.evaluateSensorData(data);
+
+      setState(() {
+        avgData = data;
+        evaluation = result;
+        loading = false;
+        measuring = true;
+      });
+
+      final record = PlantRecord(
+        timestamp: DateTime.now(),
+        data: data,
+        plantName: widget.plant.plant,
+        nickname: widget.nickname,
+      );
+
+      final box = Hive.box<PlantRecord>('plant_history');
+      await box.add(record);
+    } catch (e) {
+      setState(() {
+        loading = false;
+        measuring = false;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error al analizar la planta: $e'),
+          backgroundColor: Colors.redAccent,
+        ),
+      );
+    }
   }
 
   @override
@@ -68,51 +96,80 @@ class _PlantAnalyzerPageState extends State<PlantAnalyzerPage> {
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      body:
-          loading
-              ? const Center(
-                child: CircularProgressIndicator(color: Colors.greenAccent),
-              )
-              : Padding(
-                padding: const EdgeInsets.all(24.0),
-                child: Column(
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child:
+            loading
+                ? const Center(
+                  child: CircularProgressIndicator(color: Colors.greenAccent),
+                )
+                : Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Análisis Promedio:",
-                      style: Theme.of(
-                        context,
-                      ).textTheme.titleLarge?.copyWith(color: Colors.white),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      "🌡️ Temperatura: ${avgData!.temperature}°C\n💧 Humedad: ${avgData!.moisture}%\n🔆 Luz: ${avgData!.light}%",
-                      style: const TextStyle(
-                        color: Colors.white70,
-                        fontSize: 16,
+                    if (widget.bleService == null)
+                      const Text(
+                        '⚠️ No hay conexión con Cerax!. No se puede medir sin conexión.',
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      )
+                    else if (!measuring)
+                      Center(
+                        child: ElevatedButton.icon(
+                          icon: const Icon(Icons.analytics),
+                          label: const Text("Iniciar medición"),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xff607afb),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 24,
+                              vertical: 12,
+                            ),
+                            textStyle: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          onPressed: analyzePlant,
+                        ),
+                      )
+                    else ...[
+                      Text(
+                        "Análisis Promedio:",
+                        style: Theme.of(
+                          context,
+                        ).textTheme.titleLarge?.copyWith(color: Colors.white),
                       ),
-                    ),
-                    const SizedBox(height: 24),
-                    Text(
-                      "Consejos para tu planta:",
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    for (var entry in evaluation!.entries)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 8.0),
-                        child: Text(
-                          "• ${entry.key}: ${entry.value}",
-                          style: const TextStyle(color: Colors.white70),
+                      const SizedBox(height: 16),
+                      Text(
+                        "🌡️ Temperatura: ${avgData!.temperature}°C\n💧 Humedad: ${avgData!.moisture}%\n🔆 Luz: ${avgData!.light}%",
+                        style: const TextStyle(
+                          color: Colors.white70,
+                          fontSize: 16,
                         ),
                       ),
+                      const SizedBox(height: 24),
+                      Text(
+                        "Consejos para tu planta:",
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      for (var entry in evaluation!.entries)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 8.0),
+                          child: Text(
+                            "• ${entry.key}: ${entry.value}",
+                            style: const TextStyle(color: Colors.white70),
+                          ),
+                        ),
+                    ],
                   ],
                 ),
-              ),
+      ),
     );
   }
 }

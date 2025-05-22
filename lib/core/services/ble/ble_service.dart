@@ -4,6 +4,11 @@ import 'package:cerax_app_v1/core/models/sensor_data.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class BLEService {
+  // Singleton setup
+  static final BLEService _instance = BLEService._internal();
+  factory BLEService() => _instance;
+  BLEService._internal();
+
   static const String deviceName = "PlantMonitor";
   static final Guid serviceUuid = Guid("12345678-1234-1234-1234-1234567890ab");
   static final Guid characteristicUuid = Guid(
@@ -12,6 +17,8 @@ class BLEService {
 
   BluetoothDevice? _connectedDevice;
   BluetoothCharacteristic? _characteristic;
+
+  bool get isConnected => _connectedDevice != null;
 
   Future<void> requestBLEPermissions() async {
     if (await Permission.bluetoothScan.isDenied) {
@@ -79,5 +86,7 @@ class BLEService {
 
   Future<void> disconnect() async {
     await _connectedDevice?.disconnect();
+    _connectedDevice = null;
+    _characteristic = null;
   }
 }

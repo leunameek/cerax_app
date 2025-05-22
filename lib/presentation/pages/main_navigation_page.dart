@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cerax_app_v1/presentation/pages/interactive_welcome_page.dart';
 import 'package:cerax_app_v1/presentation/pages/my_plants_page.dart';
-import 'package:cerax_app_v1/presentation/pages/profile_page.dart';
+import 'package:cerax_app_v1/presentation/pages/store_page.dart';
 
 class MainNavigationPage extends StatefulWidget {
   const MainNavigationPage({super.key});
@@ -13,22 +13,46 @@ class MainNavigationPage extends StatefulWidget {
 class _MainNavigationPageState extends State<MainNavigationPage> {
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = const [
-    InteractiveWelcomePage(),
-    MyPlantsPage(),
-    ProfilePage(),
-  ];
+  final List<GlobalKey<NavigatorState>> _navigatorKeys = List.generate(
+    3,
+    (_) => GlobalKey<NavigatorState>(),
+  );
 
   void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+    if (_selectedIndex == index) {
+      _navigatorKeys[index].currentState?.popUntil((r) => r.isFirst);
+    } else {
+      setState(() {
+        _selectedIndex = index;
+      });
+    }
+  }
+
+  Widget _buildOffstageNavigator(int index, Widget rootPage) {
+    return Offstage(
+      offstage: _selectedIndex != index,
+      child: Navigator(
+        key: _navigatorKeys[index],
+        onGenerateRoute: (RouteSettings settings) {
+          return MaterialPageRoute(
+            builder: (_) => rootPage,
+            settings: settings,
+          );
+        },
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(index: _selectedIndex, children: _pages),
+      body: Stack(
+        children: [
+          _buildOffstageNavigator(0, const InteractiveWelcomePage()),
+          _buildOffstageNavigator(1, const MyPlantsPage()),
+          _buildOffstageNavigator(2, const StorePage()),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
@@ -41,7 +65,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
             icon: Icon(Icons.filter_vintage_outlined),
             label: 'Mis Plantas',
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+          BottomNavigationBarItem(icon: Icon(Icons.store), label: 'Tienda'),
         ],
       ),
     );
