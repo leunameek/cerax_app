@@ -146,6 +146,15 @@ class PlantHistoryPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text(
+                        "Planta: ${records.first.plantName}",
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
                       _buildChart(
                         "🌡️ Temperatura (°C)",
                         temperatures,
@@ -164,6 +173,26 @@ class PlantHistoryPage extends StatelessWidget {
                         timestamps,
                         Colors.amber,
                       ),
+                      const SizedBox(height: 12),
+                      const Text(
+                        "Recomendaciones históricas:",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      ...records.map((record) {
+                        final eval = record.data;
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 8.0),
+                          child: Text(
+                            "• ${record.timestamp.day}/${record.timestamp.month}: Temp: ${eval.temperature}°C, Humedad: ${eval.moisture}%, Luz: ${eval.light}%",
+                            style: const TextStyle(color: Colors.white70),
+                          ),
+                        );
+                      }).toList(),
                     ],
                   ),
                 ),
